@@ -1,14 +1,5 @@
-# Ready Trader Go
+# MARKET MAKING TRADING BOTS
 
-## IT'S READY TRADER GO TIME
-
-Welcome to the ultimate team student trading competition. Competitors get to
-learn all the fundamentals of trading and truly test their coding and analytical
-skills. The aim is to build and optimise a trading algorithm that outperforms
-all others on a virtual exchange.
-
-To learn more about the competition, visit [readytradergo.optiver.com]
-(https://readytradergo.optiver.com).
 
 ## Getting started
 
@@ -195,47 +186,3 @@ match events file you wish to replay:
 ```shell
 python3 rtg.py replay match_events.csv
 ```
-
-### Autotrader environment
-
-Autotraders in Ready Trader Go will be run in the following environment:
-
-* Operating system: Linux
-* Python version: 3.11.2
-* Available libraries: numpy 1.24.2; pandas 1.5.3; scipy 1.10.1
-* Memory limit: 2GB
-* Total disk usage limit: 100MB (including the log file)
-* Maximum number of autotraders per match: 8
-* Autotraders may not create sub-processes but may have multiple threads
-* Autotraders may not access the internet
-
-## How do I submit my AutoTrader?
-
-Shortly after the competition begins you'll be supplied with the details of
-a [GIT repository](https://git-scm.com) which you can use to submit your
-autotrader. To access the GIT repository, you'll first need to 'clone' it.
-
-For example:
-
-```shell
-git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/TEAM_NAME
-```
-
-(replace 'TEAM_NAME' with your team name.)
-
-To submit your autotrader, you need to _commit_ your `autotrader.py` file to the
-GIT repository and then _push_ that commit to your Git repository. For example:
-
-```shell
-git add autotrader.py
-git commit -m "Updating my autotrader"
-git push
-```
-
-Do _not_ put the `autotrader.py` file in a folder and do _not_ include any other
-files (any other files will be ignored). You may only submit one autotrader (i.e.
-you cannot submit both a Python and a C++ autotrader). 
-
-You may replace your autotrader with a new one at any time. When each
-tournament starts we'll use the autotrader in your GIT repository at the
-cut-off time for that tournament.
